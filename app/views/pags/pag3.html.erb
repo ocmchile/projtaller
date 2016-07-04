@@ -1,0 +1,16 @@
+<h1>Alumnos Registrados</h1>
+<% @users.each do |u| %>
+<p><%= u %></p>
+<% end %>
+
+<script>
+	$var = 0;
+	$("body").click(function(e) {
+		$var = $var + 1;
+		if ($var == 2)
+		{
+			e.preventDefault();
+			$.backstretch('http://lorempixel.com/350/200');
+		}
+	});
+</script>
